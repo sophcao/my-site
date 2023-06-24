@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
   background-color: rgb(249, 214, 226);
@@ -34,7 +35,6 @@ body {
 }
 #start{
   font-size: 1.3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 1em 3em;
   background-color: mintcream;
   border: none;
@@ -46,19 +46,23 @@ body {
 h1 {
   font-size: 2em;
   margin-bottom: 0.35em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   font-size: 1.2em;
   margin-bottom: 0.4em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 small {
   font-size: .7em;
   margin-bottom: 1.2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stem-ref {
+  margin-bottom: 1em;
+}
+.stem-ref span {
+  font-weight: 600;
 }
 
 #user-input-section {

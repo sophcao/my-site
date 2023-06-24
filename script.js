@@ -15,7 +15,7 @@ const stems = [
 ];
 
 const message = document.getElementById("message");
-const stem = document.querySelector("stem");
+const stem = document.querySelector(".stem-ref");
 const controls = document.querySelector(".controls-container");
 const startButton = document.getElementById("start");
 const letterContainer = document.getElementById("letter-container");
@@ -43,10 +43,12 @@ const stopGame = function() {
 };
 
 // generate word
-const generateWord = () => {
+const generateStem = () => {
     letterContainer.classList.remove("hide");
     userInpSection.innerText = "";
-    randomWord = stem[generateRandomValue(stem)];
+    randomWord = stems[generateRandomValue(stems)];
+    stemRef.innerHTML = 
+    '<div id="stem"> <span>Stem: </span>${randomWord}</div>';
     console.log(randomWord);
 };
 
@@ -79,12 +81,8 @@ const init = () => {
     winCount = 0;
     lossCount = 5;
     randomWord = "";
-    word.innerText = "";
-    message.innerText = "";
-    userInpSection.innerHTML = "";
-    letterContainer.classList.add("hide");
-    letterContainer.innterHTML = "";
-    generateWord();
+    
+    generateStem();
 
 };
 
