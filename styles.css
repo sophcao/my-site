@@ -33,13 +33,25 @@ body {
 }
 #start{
   font-size: 1.3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: fantasy;
   padding: 1em 3em;
   background-color: mintcream;
   border: none;
   outline: none;
   border-radius: 2em;
 
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hide {
