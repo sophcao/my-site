@@ -4,21 +4,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Word Game</title>
   <!--Google Fonts-->
-  <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <!--Stylesheet -->
+  <link
+    href="http://fonts.googleapis.com/css2?
+    family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+    />
+   <!--Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
-    <h1>Welcome to Web Word Game</h1>
-    <p>Instructions: Enter words that contain the given stem.</p>
-    <button id="start">Start Game</button>
+    <div class="hint-ref"></div>
+    <div id="user-input-section"></div>
+    <div id="message"></div>
+    <div id="letter-container"></div>
   </div>
   <div class="controls-container">
     <div id="result"></div>
     <div id="word"></div>
+    <button id="start">Start</button>
   </div>
   <!-- Script -->
   <script src="script.js"></script>
+
 </body>
 </html>
