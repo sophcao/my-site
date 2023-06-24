@@ -33,7 +33,7 @@ body {
 }
 #start{
   font-size: 1.3em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 1em 3em;
   background-color: mintcream;
   border: none;
@@ -45,13 +45,13 @@ body {
 h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   font-size: 1.2em;
   margin-bottom: 2em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hide {
