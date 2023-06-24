@@ -42,7 +42,10 @@ const stopGame = function() {
 
 // generate word
 const generateWord = () => {
-
+    letterContainer.classList.remove("hide");
+    userInpSection.innerText = "";
+    randomWord = stem[generateRandomValue(stem)];
+    console.log(randomWord);
 };
 
 // initial function
