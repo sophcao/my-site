@@ -21,6 +21,8 @@ const startButton = document.getElementById("start");
 const letterContainer = document.getElementById("letter-container");
 const userInpSection = document.getElementById("user-input-section");
 const resultText = document.getElementById("result");
+const wordInput = document.getElementById("word-input");
+const enterButton = document.getElementById("enter-btn");
 
 let randomWord = "";
 let winCount = 0, lossCOunt = 0;
@@ -48,6 +50,30 @@ const generateWord = () => {
     console.log(randomWord);
 };
 
+// Enter button click event handler
+enterButton.addEventListener("enter", () => {
+  const typedWord = wordInput.value.trim().toLowerCase();
+  if (typedWord.length > 0) {
+    // Check if the typed word matches the randomWord
+    if (typedWord.includes(randomWord)) {
+      message.innerText = "Correct!";
+      winCount++;
+      // Remove the word from the input box
+      wordInput.value = "";
+    } else {
+      message.innerText = "Incorrect!";
+      lossCount--;
+    }
+    // Update the win/loss count
+    resultText.innerText = `Wins: ${winCount} | Losses: ${lossCount}`;
+    // Check if the game is over
+    if (lossCount === 0) {
+      stopGame();
+    }
+  }
+});
+
+
 // initial function
 const init = () => {
     winCount = 0;
@@ -60,5 +86,6 @@ const init = () => {
     letterContainer.innterHTML = "";
     generateWord();
 
-
 };
+
+
